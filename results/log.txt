@@ -1,0 +1,8 @@
+[2025-05-04 21:07:09] Start training of model: LinearRegression
+[2025-05-04 21:08:18] Start training of model: LinearRegression
+[2025-05-04 21:08:34] Start training of model: LinearRegression
+[2025-05-04 21:14:48] Start training (regression) of model: LinearRegression
+[2025-05-04 21:14:50] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-04 21:14:50] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-04 21:14:50] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-04 21:14:50] Training complete for model: LinearRegression

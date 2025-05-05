@@ -176,8 +176,7 @@ manual_hyperparameters = {
         'subsample': 0.75
     },
     'LinearRegression': {
-        'fit_intercept': True,
-        'normalize': False
+        'fit_intercept': True
     },
     'SVR': {
         'C': 1.0,
