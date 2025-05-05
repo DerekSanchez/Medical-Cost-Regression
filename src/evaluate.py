@@ -6,100 +6,76 @@ import seaborn as sns
 import src.utils as ut
 from src.config import scoring_methods, scoring_mode, paths
 from sklearn.metrics import (
-    accuracy_score,
-    precision_score,
-    recall_score,
-    f1_score,
-    roc_auc_score,
-    classification_report,
-    confusion_matrix,
-    roc_curve,
-    auc,
-    precision_recall_curve
+    mean_squared_error,
+    mean_absolute_error,
+    root_mean_squared_error,
+    r2_score,
+    mean_absolute_percentage_error
 )
 
-def generate_classification_report(y_test, y_pred):
+def generate_regression_report(y_test, y_pred):
     """
-    Generates a classification report in DataFrame format
+    Generates a regression report in DataFrame format
     
     Parameters:
         - y_test (pd.Series): Real values of target variable
         - y_pred (pd.Series): Predicted values
     Returns:
-        pd.DataFrame: Classification report 
+        pd.DataFrame: Regression report 
     """
-    report = classification_report(y_test, y_pred, output_dict = True)
-    report_df = pd.DataFrame(report).transpose()
+    metrics = {
+        'Mean Absolute Error (MAE)': mean_absolute_error(y_test, y_pred),
+        'Mean Squared Error (MSE)': mean_squared_error(y_test, y_pred),
+        'Root Mean Squared Error (RMSE)': root_mean_squared_error(y_test, y_pred),
+        'Mean Absolute Percentage Error (MAPE)': mean_absolute_percentage_error(y_test, y_pred),
+        'R-squared (R2)': r2_score(y_test, y_pred)
+    }
     
-    accuracy = report_df.loc['accuracy', 'precision']
-    report_df = report_df.drop(index = 'accuracy')
+    report_df = pd.DataFrame(metrics, index=['Value']).transpose()
     
-    print('Classification report')
+    print('Regression report')
     display(report_df)
     
-    print(f'Test Accuracy: {accuracy:.2%}')
-   
     # document a log
-    ut.write_log(f'classification report generated')
-    
+    ut.write_log(f'regression report generated')
 
-def plot_confusion_matrix(y_test, y_pred, labels = None):
+def plot_residuals(y_test, y_pred):
     """
-    Shows a plot of the confusion matrix plot
+    Shows a plot of residuals
     
     Parameters:
         - y_test (pd.Series): Real values of target variable
         - y_pred (pd.Series): Predicted values
-        - labels (list, optional): Class labels
     """
-    # if labels not specified, generate automatically
-    if labels is None:
-        labels = sorted(set(y_test).union(set(y_pred)))
-
-    conf_matrix = confusion_matrix(y_test, y_pred, labels = labels)
-    sns.heatmap(conf_matrix, annot = True, fmt = 'd', cmap = 'Blues', xticklabels = labels, yticklabels = labels)
-    plt.xlabel('Predicted')
-    plt.ylabel('Actual')
+    residuals = y_test - y_pred
+    plt.figure(figsize=(10, 6))
+    sns.histplot(residuals, kde=True, bins=30, color='blue')
+    plt.title('Residuals Distribution')
+    plt.xlabel('Residuals')
+    plt.ylabel('Frequency')
     plt.show()
     
     # document a log
-    ut.write_log(f'confusion matrix displayed')
+    ut.write_log(f'residuals plot displayed')
 
-def plot_roc_curve(y_test, y_pred_proba):
+def plot_predictions(y_test, y_pred):
     """
-    Shows ROC curve and calculates AUC
+    Shows a scatter plot of actual vs predicted values
     
     Parameters:
         - y_test (pd.Series): Real values of target variable
-        - y_pred_proba (np.array): Probability predictions
+        - y_pred (pd.Series): Predicted values
     """
-    fpr, tpr, _ = roc_curve(y_test, y_pred_proba)
-    roc_auc = auc(fpr, tpr)
-    
-    plt.figure(figsize = (10, 8))
-    plt.plot(fpr, tpr, label = f'ROC Curve (area = {roc_auc:.2f})')
-    plt.plot([0,1], [0,1], 'r--')
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.legend(loc = 'lower right')
+    plt.figure(figsize=(10, 6))
+    sns.scatterplot(x=y_test, y=y_pred, alpha=0.6)
+    plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', lw=2)
+    plt.xlabel('Actual Values')
+    plt.ylabel('Predicted Values')
+    plt.title('Actual vs Predicted')
     plt.show()
     
     # document a log
-    ut.write_log(f'roc curve displayed')
-    
-def plot_precision_recall(y_test, y_pred_proba):
-    """
-    Plot a curve of precision vs recall
-    
-    Parameters:
-        - y_test (pd.Series): Real values of target variable
-        - y_pred_proba (np.array): Probability predictions
-    """
-    precision, recall, _ = precision_recall_curve(y_test, y_pred_proba)
-    plt.plot(recall, precision)
-    plt.xlabel('Recall')
-    plt.ylabel('Precision')
-    plt.show()
+    ut.write_log(f'actual vs predicted plot displayed')
 
 def save_metrics(metrics, model_name):
     """
@@ -113,7 +89,7 @@ def save_metrics(metrics, model_name):
     metrics_path = f"{paths['models']}/{model_name}_metrics.json"
     
     with open(metrics_path, 'w') as file:
-        json.dump(metrics, file, indent = 4)
+        json.dump(metrics, file, indent=4)
     
     print(f'Metrics saved on {metrics_path}')
 
@@ -131,18 +107,14 @@ def get_test_metrics(model, X_test, y_test):
     """
     # predictions
     y_pred = model.predict(X_test)
-    y_proba = model.predict_proba(X_test)[:, 1] if hasattr(model, 'predict_proba') else None
     
     # main metrics
     metrics = {
-        'accuracy' : accuracy_score(y_test, y_pred),
-        'precision' : precision_score(y_test, y_pred, average = 'binary', zero_division = 0),
-        'recall' : recall_score(y_test, y_pred, average = 'binary', zero_division = 0),
-        'f1_score' : f1_score(y_test, y_pred, average = 'binary')
+        'mean_absolute_error': mean_absolute_error(y_test, y_pred),
+        'mean_squared_error': mean_squared_error(y_test, y_pred),
+        'root_mean_squared_error': mean_squared_error(y_test, y_pred, squared=False),
+        'mean_absolute_percentage_error': mean_absolute_percentage_error(y_test, y_pred),
+        'r2_score': r2_score(y_test, y_pred)
     }
-    
-    # check if AUC-ROC is available
-    if y_proba is not None:
-        metrics['roc_auc'] = roc_auc_score(y_test, y_proba)
     
     return metrics

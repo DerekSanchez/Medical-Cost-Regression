@@ -41,45 +41,8 @@ class MissingColumnError(Exception):
 # Target Variable Preprocessing
 # ===============================
 
-class TargetPreprocess(BaseEstimator, TransformerMixin):
-    """
-    Class to preprocess the target variable
-    It will perform:
-        - encoding
-    """
-    def __init__(self):
-       self.mapping = cf.target_mapping
-    
-    def fit(self, y, X = None):
-        """
-        Fits necessary transformations to use y in a Machine Learning model
-        Parameters:
-            - y (pd.Series): Target Variable
-            - X (pd.DataFrame): Associated Features (optional)
-        """
-    
-        # check if expected values are in y
-        unique_values = set(y.unique())
-        missing_values = [val for val in self.mapping.keys() if val not in unique_values]
-        
-        if missing_values:
-            raise ValueError(f'The following expected values are not in y: {missing_values}')
-        
-        return self
-    def transform(self, y):
-        """
-        Encode target variable
-        
-        Parameters
-            - y (pd.Series): Target variable
-        
-        Return:
-            pd.Series: Encoded target variables
-        """
-        
-        # map target
-        return y.map(self.mapping)
-        
+# No target preprocessing needed for this dataset        
+
 # ===============================
 # Feature Selection
 # ===============================
@@ -142,11 +105,6 @@ class DataCleaning(BaseEstimator, TransformerMixin):
     
     def transform(self, X):
         X_copy = X.copy()
-        
-        
-        # adjust data type
-        if 'TotalCharges' in X_copy.columns:
-            X_copy['TotalCharges'] = pd.to_numeric(X_copy['TotalCharges'], errors = 'coerce')
 
         # adjust spaces in string columns
         object_columns = X_copy.select_dtypes(include = 'object').columns
@@ -183,17 +141,13 @@ class FeatureEngineering(BaseEstimator, TransformerMixin):
         """ 
         X_copy = X.copy()
         
-        # create new column: years_of_age
-        if 'Birthday_count' in X_copy.columns:
-            X_copy['years_of_age'] = X_copy['Birthday_count'] / 365
+        # create new column: age squared
+        if 'age' in X_copy.columns:
+            X_copy['age2'] = X_copy['age'] ** 2
         
-        # create new column: average_lifetime_income
-        if 'Employed_days' in X_copy.columns and 'Annual_income' in X_copy.columns:
-            X_copy['average_lifetime_income'] = X_copy['Annual_income'] * X_copy['Employed_days'] / 365
-        
-        # create new column: log annual income
-        if 'Annual_income' in X_copy.columns:
-            X_copy['LogAnnual_income'] = X_copy['Annual_income'].apply(
+        # create new column: log bmi
+        if 'bmi' in X_copy.columns:
+            X_copy['Logbmi'] = X_copy['bmi'].apply(
             lambda x: np.log(x) if pd.notnull(x) and x > 0 else 0)
         
         return X_copy
