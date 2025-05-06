@@ -156,9 +156,9 @@ grid_param_distributions = {
         'normalize': [True, False]
     },
     'SVR': {
-        'C': [0.1, 1, 10],
-        'kernel': ['linear', 'rbf'],
-        'gamma': ['scale', 'auto', 0.01]
+        'C': [9.3, 9.6, 9.9, 10, 10.1],
+        'kernel': ['linear', 'rbf', 'poly'],
+        'gamma': ['scale', 'auto', 0.01, 0.99, 1.0, 1.1]
     }
 }
 
@@ -179,9 +179,9 @@ manual_hyperparameters = {
         'fit_intercept': True
     },
     'SVR': {
-        'C': 1.0,
-        'kernel': 'rbf',
-        'gamma': 'scale'
+        'C': 10.1,
+        'kernel': 'linear',
+        'gamma': 1.1
     }
 }
 

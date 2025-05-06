@@ -1,0 +1,4 @@
+4 de mayo 2025. tengo que modifcar las funciones del script evaluate.py para que funcionen para modelos de regresión y adaptarlas en
+el notebook de results report
+LISTO
+6 de mayo 2025. tengo que entrenar los modelos faltantes (ya está linear regresión, daltan los demás)

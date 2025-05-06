@@ -24,11 +24,11 @@ def generate_regression_report(y_test, y_pred):
         pd.DataFrame: Regression report 
     """
     metrics = {
-        'Mean Absolute Error (MAE)': mean_absolute_error(y_test, y_pred),
-        'Mean Squared Error (MSE)': mean_squared_error(y_test, y_pred),
-        'Root Mean Squared Error (RMSE)': root_mean_squared_error(y_test, y_pred),
-        'Mean Absolute Percentage Error (MAPE)': mean_absolute_percentage_error(y_test, y_pred),
-        'R-squared (R2)': r2_score(y_test, y_pred)
+        'Mean Absolute Error (MAE)': round(mean_absolute_error(y_test, y_pred) * 100, 7),
+        'Mean Squared Error (MSE)': round(mean_squared_error(y_test, y_pred) * 100, 7),
+        'Root Mean Squared Error (RMSE)': round(root_mean_squared_error(y_test, y_pred) * 100, 7),
+        'Mean Absolute Percentage Error (MAPE)': round(mean_absolute_percentage_error(y_test, y_pred) * 100, 7),
+        'R-squared (R2)': round(r2_score(y_test, y_pred) * 100, 7)
     }
     
     report_df = pd.DataFrame(metrics, index=['Value']).transpose()
@@ -112,7 +112,7 @@ def get_test_metrics(model, X_test, y_test):
     metrics = {
         'mean_absolute_error': mean_absolute_error(y_test, y_pred),
         'mean_squared_error': mean_squared_error(y_test, y_pred),
-        'root_mean_squared_error': mean_squared_error(y_test, y_pred, squared=False),
+        'root_mean_squared_error': root_mean_squared_error(y_test, y_pred),
         'mean_absolute_percentage_error': mean_absolute_percentage_error(y_test, y_pred),
         'r2_score': r2_score(y_test, y_pred)
     }
