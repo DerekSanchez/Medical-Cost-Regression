@@ -164,10 +164,10 @@ grid_param_distributions = {
 
 manual_hyperparameters = {
     'RandomForest': {
-        'n_estimators': 200,
-        'max_depth': 20,
-        'min_samples_split': 5,
-        'min_samples_leaf': 2
+        'n_estimators': 364,
+        'max_depth': 5,
+        'min_samples_split': 4,
+        'min_samples_leaf': 12
     },
     'GradientBoosting': {
         'learning_rate': 0.1,
@@ -180,8 +180,9 @@ manual_hyperparameters = {
     },
     'SVR': {
         'C': 10.1,
-        'kernel': 'linear',
-        'gamma': 1.1
+        'kernel': 'poly',
+        'gamma': 1.1,
+        'degree': 5
     }
 }
 
