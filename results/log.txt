@@ -281,3 +281,285 @@
 [2025-05-07 08:32:13] regression report generated
 [2025-05-07 08:32:14] residuals plot displayed
 [2025-05-07 08:32:15] actual vs predicted plot displayed
+[2025-05-10 14:35:38] Start training (regression) of model: GradientBoosting
+[2025-05-10 14:44:30] Best Hyperparameters: {'learning_rate': 0.17784866956101675, 'max_depth': 3, 'n_estimators': 103, 'subsample': 0.8904989689999787}
+[2025-05-10 14:44:30] CV Train Score: {'mean': 0.9947826500196661, 'std': 0.012875064683166607}
+[2025-05-10 14:44:30] CV Validation Score: {'mean': 0.820712857213274, 'std': None}
+[2025-05-10 14:44:30] Training complete for model: GradientBoosting
+[2025-05-10 14:49:26] Start training (regression) of model: LinearRegression
+[2025-05-10 14:49:26] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 14:49:26] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 14:49:26] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 14:49:26] Training complete for model: LinearRegression
+[2025-05-10 14:49:27] regression report generated
+[2025-05-10 14:49:28] residuals plot displayed
+[2025-05-10 14:49:29] actual vs predicted plot displayed
+[2025-05-10 14:49:29] Start training (regression) of model: SVR
+[2025-05-10 14:49:37] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 14:49:37] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 14:49:37] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 14:49:37] Training complete for model: SVR
+[2025-05-10 14:50:18] Start training (regression) of model: LinearRegression
+[2025-05-10 14:50:18] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 14:50:18] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 14:50:18] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 14:50:18] Training complete for model: LinearRegression
+[2025-05-10 14:50:18] regression report generated
+[2025-05-10 14:50:19] residuals plot displayed
+[2025-05-10 14:50:20] actual vs predicted plot displayed
+[2025-05-10 14:50:20] Start training (regression) of model: SVR
+[2025-05-10 14:50:31] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 14:50:31] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 14:50:31] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 14:50:31] Training complete for model: SVR
+[2025-05-10 14:50:31] regression report generated
+[2025-05-10 14:50:32] residuals plot displayed
+[2025-05-10 14:50:33] actual vs predicted plot displayed
+[2025-05-10 14:50:33] Start training (regression) of model: RandomForest
+[2025-05-10 14:51:03] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 14:51:03] CV Train Score: {'mean': 0.8726232395077373, 'std': 0.005149797535803848}
+[2025-05-10 14:51:03] CV Validation Score: {'mean': 0.8343816672349197, 'std': 0.061803231977694766}
+[2025-05-10 14:51:03] Training complete for model: RandomForest
+[2025-05-10 14:51:03] regression report generated
+[2025-05-10 14:51:04] residuals plot displayed
+[2025-05-10 14:51:05] actual vs predicted plot displayed
+[2025-05-10 14:51:05] Start training (regression) of model: GradientBoosting
+[2025-05-10 14:54:06] Best Hyperparameters: {'learning_rate': 0.16, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.9}
+[2025-05-10 14:54:06] CV Train Score: {'mean': 0.9673490365426144, 'std': 0.021994458616796258}
+[2025-05-10 14:54:06] CV Validation Score: {'mean': 0.8240146248425824, 'std': None}
+[2025-05-10 14:54:06] Training complete for model: GradientBoosting
+[2025-05-10 14:55:10] Start training (regression) of model: LinearRegression
+[2025-05-10 14:55:11] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 14:55:11] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 14:55:11] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 14:55:11] Training complete for model: LinearRegression
+[2025-05-10 14:55:11] regression report generated
+[2025-05-10 14:55:13] residuals plot displayed
+[2025-05-10 14:55:14] actual vs predicted plot displayed
+[2025-05-10 14:55:14] Start training (regression) of model: SVR
+[2025-05-10 14:55:24] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 14:55:24] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 14:55:24] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 14:55:24] Training complete for model: SVR
+[2025-05-10 14:55:25] regression report generated
+[2025-05-10 14:55:26] residuals plot displayed
+[2025-05-10 14:55:26] actual vs predicted plot displayed
+[2025-05-10 14:55:26] Start training (regression) of model: RandomForest
+[2025-05-10 14:55:48] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 14:55:48] CV Train Score: {'mean': 0.8725557184392526, 'std': 0.005206714357053134}
+[2025-05-10 14:55:48] CV Validation Score: {'mean': 0.8337516432454104, 'std': 0.06203790903305106}
+[2025-05-10 14:55:48] Training complete for model: RandomForest
+[2025-05-10 14:55:49] regression report generated
+[2025-05-10 14:55:49] residuals plot displayed
+[2025-05-10 14:55:50] actual vs predicted plot displayed
+[2025-05-10 14:55:50] Start training (regression) of model: GradientBoosting
+[2025-05-10 14:55:56] Best Hyperparameters: {'learning_rate': 0.16, 'n_estimators': 100, 'max_depth': 3, 'subsample': 0.9}
+[2025-05-10 14:55:56] CV Train Score: {'mean': 0.9338233589953987, 'std': 0.0036081524898799035}
+[2025-05-10 14:55:56] CV Validation Score: {'mean': 0.8184735440485952, 'std': 0.0632955471233623}
+[2025-05-10 14:55:56] Training complete for model: GradientBoosting
+[2025-05-10 14:56:49] Start training (regression) of model: LinearRegression
+[2025-05-10 14:56:50] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 14:56:50] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 14:56:50] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 14:56:50] Training complete for model: LinearRegression
+[2025-05-10 14:56:51] regression report generated
+[2025-05-10 14:56:53] residuals plot displayed
+[2025-05-10 14:56:53] actual vs predicted plot displayed
+[2025-05-10 14:56:54] Start training (regression) of model: SVR
+[2025-05-10 14:57:03] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 14:57:03] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 14:57:03] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 14:57:03] Training complete for model: SVR
+[2025-05-10 14:57:03] regression report generated
+[2025-05-10 14:57:04] residuals plot displayed
+[2025-05-10 14:57:05] actual vs predicted plot displayed
+[2025-05-10 14:57:05] Start training (regression) of model: RandomForest
+[2025-05-10 14:57:26] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 14:57:26] CV Train Score: {'mean': 0.8726701904048053, 'std': 0.0052281187784990754}
+[2025-05-10 14:57:26] CV Validation Score: {'mean': 0.8338795861213274, 'std': 0.06243326351723522}
+[2025-05-10 14:57:26] Training complete for model: RandomForest
+[2025-05-10 14:57:26] regression report generated
+[2025-05-10 14:57:27] residuals plot displayed
+[2025-05-10 14:57:27] actual vs predicted plot displayed
+[2025-05-10 14:57:28] Start training (regression) of model: GradientBoosting
+[2025-05-10 14:57:33] Best Hyperparameters: {'learning_rate': 0.16, 'n_estimators': 100, 'max_depth': 2, 'subsample': 0.9}
+[2025-05-10 14:57:33] CV Train Score: {'mean': 0.8946794508837748, 'std': 0.00532173816353732}
+[2025-05-10 14:57:33] CV Validation Score: {'mean': 0.8289988851010982, 'std': 0.06136683293004706}
+[2025-05-10 14:57:33] Training complete for model: GradientBoosting
+[2025-05-10 14:58:12] Start training (regression) of model: LinearRegression
+[2025-05-10 14:58:13] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 14:58:13] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 14:58:13] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 14:58:13] Training complete for model: LinearRegression
+[2025-05-10 14:58:13] regression report generated
+[2025-05-10 14:58:14] residuals plot displayed
+[2025-05-10 14:58:15] actual vs predicted plot displayed
+[2025-05-10 14:58:15] Start training (regression) of model: SVR
+[2025-05-10 14:58:24] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 14:58:24] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 14:58:24] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 14:58:24] Training complete for model: SVR
+[2025-05-10 14:58:24] regression report generated
+[2025-05-10 14:58:25] residuals plot displayed
+[2025-05-10 14:58:26] actual vs predicted plot displayed
+[2025-05-10 14:58:26] Start training (regression) of model: RandomForest
+[2025-05-10 14:58:49] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 14:58:49] CV Train Score: {'mean': 0.8725486721670471, 'std': 0.005171819605620122}
+[2025-05-10 14:58:49] CV Validation Score: {'mean': 0.8339107985674108, 'std': 0.061866384556590076}
+[2025-05-10 14:58:49] Training complete for model: RandomForest
+[2025-05-10 14:58:49] regression report generated
+[2025-05-10 14:58:49] residuals plot displayed
+[2025-05-10 14:58:50] actual vs predicted plot displayed
+[2025-05-10 14:58:50] Start training (regression) of model: GradientBoosting
+[2025-05-10 14:58:56] Best Hyperparameters: {'learning_rate': 0.01, 'n_estimators': 100, 'max_depth': 3, 'subsample': 0.9}
+[2025-05-10 14:58:56] CV Train Score: {'mean': 0.7378809318050056, 'std': 0.005125579822224441}
+[2025-05-10 14:58:56] CV Validation Score: {'mean': 0.7214982529850062, 'std': 0.045715703506213935}
+[2025-05-10 14:58:56] Training complete for model: GradientBoosting
+[2025-05-10 14:59:44] Start training (regression) of model: LinearRegression
+[2025-05-10 14:59:45] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 14:59:45] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 14:59:45] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 14:59:45] Training complete for model: LinearRegression
+[2025-05-10 14:59:45] regression report generated
+[2025-05-10 14:59:46] residuals plot displayed
+[2025-05-10 14:59:46] actual vs predicted plot displayed
+[2025-05-10 14:59:47] Start training (regression) of model: SVR
+[2025-05-10 14:59:56] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 14:59:56] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 14:59:56] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 14:59:56] Training complete for model: SVR
+[2025-05-10 14:59:57] regression report generated
+[2025-05-10 14:59:57] residuals plot displayed
+[2025-05-10 14:59:58] actual vs predicted plot displayed
+[2025-05-10 14:59:58] Start training (regression) of model: RandomForest
+[2025-05-10 15:00:20] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 15:00:20] CV Train Score: {'mean': 0.8726831500435891, 'std': 0.0051639089527073115}
+[2025-05-10 15:00:20] CV Validation Score: {'mean': 0.8336271257661784, 'std': 0.06224411345169516}
+[2025-05-10 15:00:20] Training complete for model: RandomForest
+[2025-05-10 15:00:20] regression report generated
+[2025-05-10 15:00:21] residuals plot displayed
+[2025-05-10 15:00:22] actual vs predicted plot displayed
+[2025-05-10 15:00:22] Start training (regression) of model: GradientBoosting
+[2025-05-10 15:00:28] Best Hyperparameters: {'learning_rate': 0.2, 'n_estimators': 100, 'max_depth': 3, 'subsample': 0.9}
+[2025-05-10 15:00:28] CV Train Score: {'mean': 0.9449244063196524, 'std': 0.0032630055137460247}
+[2025-05-10 15:00:28] CV Validation Score: {'mean': 0.8132149598470642, 'std': 0.06811484292712963}
+[2025-05-10 15:00:28] Training complete for model: GradientBoosting
+[2025-05-10 15:01:24] Start training (regression) of model: LinearRegression
+[2025-05-10 15:01:25] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 15:01:25] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 15:01:25] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 15:01:25] Training complete for model: LinearRegression
+[2025-05-10 15:01:25] regression report generated
+[2025-05-10 15:01:26] residuals plot displayed
+[2025-05-10 15:01:26] actual vs predicted plot displayed
+[2025-05-10 15:01:27] Start training (regression) of model: SVR
+[2025-05-10 15:01:34] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 15:01:34] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 15:01:34] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 15:01:34] Training complete for model: SVR
+[2025-05-10 15:01:34] regression report generated
+[2025-05-10 15:01:35] residuals plot displayed
+[2025-05-10 15:01:35] actual vs predicted plot displayed
+[2025-05-10 15:01:35] Start training (regression) of model: RandomForest
+[2025-05-10 15:01:53] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 15:01:53] CV Train Score: {'mean': 0.872582330702247, 'std': 0.005109286706202038}
+[2025-05-10 15:01:53] CV Validation Score: {'mean': 0.8338581108690242, 'std': 0.06202201089990932}
+[2025-05-10 15:01:53] Training complete for model: RandomForest
+[2025-05-10 15:01:54] regression report generated
+[2025-05-10 15:01:54] residuals plot displayed
+[2025-05-10 15:01:55] actual vs predicted plot displayed
+[2025-05-10 15:01:55] Start training (regression) of model: GradientBoosting
+[2025-05-10 15:01:59] Best Hyperparameters: {'learning_rate': 0.2, 'n_estimators': 90, 'max_depth': 3, 'subsample': 0.9}
+[2025-05-10 15:01:59] CV Train Score: {'mean': 0.9394000577818524, 'std': 0.003265206269764439}
+[2025-05-10 15:01:59] CV Validation Score: {'mean': 0.8138328086042709, 'std': 0.06380977331190799}
+[2025-05-10 15:01:59] Training complete for model: GradientBoosting
+[2025-05-10 15:02:35] Start training (regression) of model: LinearRegression
+[2025-05-10 15:02:36] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 15:02:36] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 15:02:36] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 15:02:36] Training complete for model: LinearRegression
+[2025-05-10 15:02:36] regression report generated
+[2025-05-10 15:02:37] residuals plot displayed
+[2025-05-10 15:02:37] actual vs predicted plot displayed
+[2025-05-10 15:02:38] Start training (regression) of model: SVR
+[2025-05-10 15:02:45] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 15:02:45] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 15:02:45] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 15:02:45] Training complete for model: SVR
+[2025-05-10 15:02:45] regression report generated
+[2025-05-10 15:02:45] residuals plot displayed
+[2025-05-10 15:02:46] actual vs predicted plot displayed
+[2025-05-10 15:02:46] Start training (regression) of model: RandomForest
+[2025-05-10 15:03:05] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 15:03:05] CV Train Score: {'mean': 0.8726780990720318, 'std': 0.005209542423702899}
+[2025-05-10 15:03:05] CV Validation Score: {'mean': 0.8341007777585524, 'std': 0.062362646374347734}
+[2025-05-10 15:03:05] Training complete for model: RandomForest
+[2025-05-10 15:03:05] regression report generated
+[2025-05-10 15:03:06] residuals plot displayed
+[2025-05-10 15:03:06] actual vs predicted plot displayed
+[2025-05-10 15:03:06] Start training (regression) of model: GradientBoosting
+[2025-05-10 15:03:09] Best Hyperparameters: {'learning_rate': 0.2, 'n_estimators': 50, 'max_depth': 3, 'subsample': 0.9}
+[2025-05-10 15:03:09] CV Train Score: {'mean': 0.9116939790680091, 'std': 0.0042077477595534344}
+[2025-05-10 15:03:09] CV Validation Score: {'mean': 0.8250006749058498, 'std': 0.06337517335623095}
+[2025-05-10 15:03:09] Training complete for model: GradientBoosting
+[2025-05-10 15:03:45] Start training (regression) of model: LinearRegression
+[2025-05-10 15:03:45] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 15:03:45] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 15:03:45] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 15:03:45] Training complete for model: LinearRegression
+[2025-05-10 15:03:45] regression report generated
+[2025-05-10 15:03:46] residuals plot displayed
+[2025-05-10 15:03:47] actual vs predicted plot displayed
+[2025-05-10 15:03:47] Start training (regression) of model: SVR
+[2025-05-10 15:03:54] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 15:03:54] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 15:03:54] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 15:03:54] Training complete for model: SVR
+[2025-05-10 15:03:54] regression report generated
+[2025-05-10 15:03:55] residuals plot displayed
+[2025-05-10 15:03:56] actual vs predicted plot displayed
+[2025-05-10 15:03:56] Start training (regression) of model: RandomForest
+[2025-05-10 15:04:16] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 15:04:16] CV Train Score: {'mean': 0.8725934610346237, 'std': 0.005133378540244908}
+[2025-05-10 15:04:16] CV Validation Score: {'mean': 0.8340251550017607, 'std': 0.06179262610741997}
+[2025-05-10 15:04:16] Training complete for model: RandomForest
+[2025-05-10 15:04:16] regression report generated
+[2025-05-10 15:04:17] residuals plot displayed
+[2025-05-10 15:04:18] actual vs predicted plot displayed
+[2025-05-10 15:04:18] Start training (regression) of model: GradientBoosting
+[2025-05-10 15:04:21] Best Hyperparameters: {'learning_rate': 0.2, 'n_estimators': 50, 'max_depth': 3, 'subsample': 0.9}
+[2025-05-10 15:04:21] CV Train Score: {'mean': 0.9130741285744465, 'std': 0.003780784025750489}
+[2025-05-10 15:04:21] CV Validation Score: {'mean': 0.8253311836041866, 'std': 0.06248013050569503}
+[2025-05-10 15:04:21] Training complete for model: GradientBoosting
+[2025-05-10 15:04:47] Start training (regression) of model: LinearRegression
+[2025-05-10 15:04:48] Best Hyperparameters: {'fit_intercept': True}
+[2025-05-10 15:04:48] CV Train Score: {'mean': 0.7413376321574985, 'std': 0.008096364447844048}
+[2025-05-10 15:04:48] CV Validation Score: {'mean': 0.7204371178823994, 'std': 0.08269357769546067}
+[2025-05-10 15:04:48] Training complete for model: LinearRegression
+[2025-05-10 15:04:48] regression report generated
+[2025-05-10 15:04:49] residuals plot displayed
+[2025-05-10 15:04:50] actual vs predicted plot displayed
+[2025-05-10 15:04:50] Start training (regression) of model: SVR
+[2025-05-10 15:04:58] Best Hyperparameters: {'C': 10.1, 'kernel': 'poly', 'gamma': 1.1, 'degree': 5}
+[2025-05-10 15:04:58] CV Train Score: {'mean': 0.8148226334259675, 'std': 0.006490717512347075}
+[2025-05-10 15:04:58] CV Validation Score: {'mean': 0.7774592823488536, 'std': 0.06843285355621116}
+[2025-05-10 15:04:58] Training complete for model: SVR
+[2025-05-10 15:04:58] regression report generated
+[2025-05-10 15:04:58] residuals plot displayed
+[2025-05-10 15:04:59] actual vs predicted plot displayed
+[2025-05-10 15:04:59] Start training (regression) of model: RandomForest
+[2025-05-10 15:05:18] Best Hyperparameters: {'n_estimators': 364, 'max_depth': 5, 'min_samples_split': 4, 'min_samples_leaf': 12}
+[2025-05-10 15:05:18] CV Train Score: {'mean': 0.8726373845264188, 'std': 0.005193222340837699}
+[2025-05-10 15:05:18] CV Validation Score: {'mean': 0.8341141487323049, 'std': 0.061998680102573006}
+[2025-05-10 15:05:18] Training complete for model: RandomForest
+[2025-05-10 15:05:19] regression report generated
+[2025-05-10 15:05:19] residuals plot displayed
+[2025-05-10 15:05:20] actual vs predicted plot displayed
+[2025-05-10 15:05:20] Start training (regression) of model: GradientBoosting
+[2025-05-10 15:05:25] Best Hyperparameters: {'learning_rate': 0.16, 'n_estimators': 103, 'max_depth': 3, 'subsample': 0.9}
+[2025-05-10 15:05:25] CV Train Score: {'mean': 0.9359235216734177, 'std': 0.0022287887318039015}
+[2025-05-10 15:05:25] CV Validation Score: {'mean': 0.8169955923109107, 'std': 0.06162100469493013}
+[2025-05-10 15:05:25] Training complete for model: GradientBoosting
+[2025-05-10 15:07:38] regression report generated
+[2025-05-10 15:07:44] residuals plot displayed
+[2025-05-10 15:07:47] actual vs predicted plot displayed

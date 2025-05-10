@@ -146,10 +146,10 @@ grid_param_distributions = {
         'min_samples_leaf': [1, 2, 4]
     },
     'GradientBoosting': {
-        'learning_rate': [0.01, 0.1, 0.2],
-        'n_estimators': [100, 200, 300],
-        'max_depth': [3, 5, 7],
-        'subsample': [0.5, 0.75, 1.0]
+        'learning_rate': [0.16, 0.17, 0.18],
+        'n_estimators': [100, 103, 110],
+        'max_depth': [3, 4, 5],
+        'subsample': [0.8, 0.9, 1.0]
     },
     'LinearRegression': {
         'fit_intercept': [True, False],
@@ -170,10 +170,10 @@ manual_hyperparameters = {
         'min_samples_leaf': 12
     },
     'GradientBoosting': {
-        'learning_rate': 0.1,
-        'n_estimators': 200,
-        'max_depth': 5,
-        'subsample': 0.75
+        'learning_rate': 0.16,
+        'n_estimators': 103,
+        'max_depth': 3,
+        'subsample': 0.9
     },
     'LinearRegression': {
         'fit_intercept': True
