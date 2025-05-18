@@ -2,9 +2,9 @@
 
 ## Description
 
-**For an executive results deck, check 'results' folder**
+**For an executive results deck, check 'results' folder or click [here](https://drive.google.com/file/d/1aQCh0yVUKIF1y0PdP9GNjwmavwqsRq6_/view?usp=sharing)**
 
-This project builds and implements a regression model in order to bill costs for a individuals using medical services¿, using numerical and categorical information about the clients
+This project builds and implements a regression model to predict bill costs for a individuals using medical services. It uses numerical and categorical information about the clients to build the model
 - Skills used:
     - Preprocessing pipelines
     - Data visualization
